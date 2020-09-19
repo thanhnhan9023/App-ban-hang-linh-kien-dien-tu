@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.circularreveal.cardview.CircularRevealCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="6dp"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardUseCompatPadding="true"
+
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        >
+
+        <ImageView
+            android:id="@+id/ImageLoaiSpBanchay"
+            android:layout_width="140dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/ram3"
+
+
+            >
+
+        </ImageView>
+<!--        <TextView-->
+<!--            android:id="@+id/txtTenSpBanchay"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Ram DDRR4 KingSton"-->
+<!--            android:textSize="15sp"-->
+<!--            android:textStyle="bold"-->
+<!--            />-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giá"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_weight="2"
+                android:id="@+id/txtGiaSanPhamBanChay"
+                android:text="15.000 VNĐ"
+                android:textSize="15sp"
+                android:background="@drawable/text_round"
+                android:textColor="#E80B0B"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.design.circularreveal.cardview.CircularRevealCardView>

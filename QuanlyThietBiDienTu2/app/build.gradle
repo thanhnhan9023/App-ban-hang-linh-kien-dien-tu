@@ -1,0 +1,86 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '26.0.2'
+
+    defaultConfig {
+        applicationId "com.example.quanlythietbidientu2"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+android{
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+   // implementation fileTree(dir: "libs", include: ["*.jar"])
+   implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'android.arch.navigation:navigation-fragment:1.0.0'
+    implementation 'android.arch.navigation:navigation-ui:1.0.0'
+    implementation 'android.arch.lifecycle:extensions:1.1.1'
+    implementation 'android.arch.persistence.room:runtime:1.1.1'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    // retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+
+
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.9.0'
+
+
+    // sider layout
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'com.daimajia.slider:library:1.1.5@aar'
+    implementation "com.android.support:support-v4:+"
+
+    //rxjava
+    implementation "io.reactivex.rxjava3:rxjava:3.0.0-RC3"
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    //button
+//    implementation 'com.cepheuen.elegant-number-button:lib:1:0:2'
+    implementation 'com.cepheuen.elegant-number-button:lib:1.0.3'
+// //firebase
+    implementation 'com.google.firebase:firebase-database:16.0.1'
+    implementation 'com.google.firebase:firebase-core:16.0.8'
+    implementation 'com.google.firebase:firebase-auth:16.2.0'
+    implementation 'com.google.firebase:firebase-firestore:17.1.3'
+    annotationProcessor 'android.arch.persistence.room:compiler:1.1.1'
+    //    //filebox
+//    implementation 'com.google.android:flexbox:1.1.0'
+
+// icon cart
+    implementation 'com.nex3z:notification-badge:1.0.2'
+// serach
+    //implementation 'com.github.mancj:MaterialSearchBar:+'
+    implementation 'com.github.mancj:MaterialSearchBar:0.8.1'
+
+}

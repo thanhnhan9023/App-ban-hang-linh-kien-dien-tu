@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFF8E4"
+        >
+        
+        <ImageView
+            android:layout_margin="10dp"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ram3"
+            />
+        <TextView
+
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="Nhấn vào mục Mã giảm giá ở cuối trangđể hưởng miễn phí vận chuyển bạn nhé"
+
+            >
+
+        </TextView>
+    </LinearLayout>
+   
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <CheckBox
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yêu Thích"
+            />
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                  android:layout_alignParentRight="true"
+                  android:text=">"
+                  />
+
+              <TextView
+                  android:id="@+id/txtSua"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentRight="true"
+                  android:layout_centerInParent="true"
+                  android:layout_marginRight="10dp"
+                  android:text="Sửa" />
+          </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@drawable/backcart"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ImagespGioHang"
+            android:layout_width="110dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="19dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ram3">
+
+        </ImageView>
+
+
+        <LinearLayout
+            android:id="@+id/txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtTenSpGioHang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Tên Sản Phẩm"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="Giá"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+
+                    />
+                    <TextView
+                        android:id="@+id/txtGiaSpGioGang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/text_round"
+                        android:text="15000 VNĐ"
+                        android:textColor="#DA0347"
+                        android:textSize="17sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/txtXoa"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="40dp"
+                        android:background="#FA5130"
+                        android:text="Xóa"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:visibility="invisible"
+                        />
+
+            </LinearLayout>
+
+            <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                android:id="@+id/txtCountGioHang"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+
+                android:layout_margin="15dp"
+                app:backGroundColor="@android:color/white"
+                app:textColor="@android:color/black"
+                app:textSize="8sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+                android:background="#FFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Miễn Phí Vận chuyển cho đơn hàng từ 50000đ(Giảm tối đa 20000đ);Miễn Phí Vận chuyển cho đơn hàng từ 300.000(giảm tối đa 70.000đ)"
+                />
+
+
+
+</LinearLayout>

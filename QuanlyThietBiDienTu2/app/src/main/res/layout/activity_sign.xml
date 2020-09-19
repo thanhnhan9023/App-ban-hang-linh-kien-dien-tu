@@ -1,0 +1,184 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:scaleType="fitXY"
+    >
+
+    <TextView
+        android:id="@+id/welcome_to"
+        android:layout_width="200dp"
+        android:layout_height="61dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal|top"
+        android:text="Welcom to"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FFC107"
+        android:textSize="36dp"
+        android:textStyle="bold"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:fontFamily="sans-serif-light" />
+
+
+    <TextView
+        android:id="@+id/furniture"
+        android:layout_width="221dp"
+        android:layout_height="58dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="90dp"
+        android:gravity="center_horizontal|top"
+        android:text="Electronics"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#F44336"
+        android:textSize="36dp"
+
+        android:textStyle="bold"
+        tools:fontFamily="sans-serif-light" />
+
+    <EditText
+        android:id="@+id/edtUserDangNhap"
+        android:layout_width="341dp"
+        android:layout_height="58dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="140dp"
+        android:hint="Gmail"
+        android:inputType="textPersonName"
+        android:textAllCaps="false"
+        android:drawableLeft="@drawable/ic_email_black_24dp"
+
+        >
+    </EditText>
+    <EditText
+        android:id="@+id/edtpasswordDN"
+        android:layout_width="341dp"
+        android:layout_height="58dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="200dp"
+        android:hint="Passworld"
+
+
+        android:inputType="textPassword"
+        android:textAllCaps="false"
+
+        android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+        >
+    </EditText>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="341dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edtpasswordDN"
+        android:layout_marginTop="10dp"
+        android:padding="18sp"
+        android:textColor="#FFFFFF"
+        android:background="@android:color/holo_red_dark"
+        android:textSize="18sp"
+        android:text="Login" />
+
+    <Button
+        android:id="@+id/btnRegister1"
+        android:layout_width="341dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:padding="18sp"
+        android:textColor="#FFFFFF"
+        android:background="@android:color/holo_red_dark"
+        android:textSize="18sp"
+        android:text="Register Now" />
+    <LinearLayout
+        android:layout_width="341dp"
+        android:id="@+id/FrameLayout3"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/btnLogin"
+        >
+        <LinearLayout
+            android:id="@+id/FrameLayout1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/icon_fabook"
+                />
+
+
+            <Button
+                android:id="@+id/btnFacebook"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Facebook"
+                android:padding="4dp"
+                android:textColor="#FFFFFF"
+                android:background="#3A559F"
+
+                >
+            </Button>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/FrameLayout2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/e"/>
+
+
+            <Button
+                android:id="@+id/btnGoogle"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Google"
+                android:padding="4dp"
+                android:textColor="#FFFFFF"
+                android:background="#cf4333"
+                >
+            </Button>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="341dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/FrameLayout3">
+        <TextView
+            android:id="@+id/txtForegetPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forget Passwrod"
+            android:textSize="29sp"
+            >
+
+        </TextView>
+    </LinearLayout>
+
+</RelativeLayout>

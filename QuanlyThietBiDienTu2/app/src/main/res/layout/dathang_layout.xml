@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@drawable/line"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="9dp"
+
+        >
+        <ImageView
+            android:id="@+id/ImageDathang"
+            android:background="@drawable/line"
+            android:layout_width="100dp"
+            android:layout_height="125dp"
+            android:src="@drawable/ic_baseline_shopping_cart_24"
+            android:scaleType="fitXY"
+            >
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:id="@+id/txtTenSpDathang"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="Ram Laptop Crucial DDR4 4GB Bus 2666"
+            android:layout_toRightOf="@id/ImageDathang"
+            >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtGiaDathang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ImageDathang"
+            android:layout_toRightOf="@id/ImageDathang"
+            android:text="500.000 đ"></TextView>
+
+        <TextView
+            android:id="@+id/txtsoluongdathang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ImageDathang"
+            android:layout_alignParentRight="true"
+
+            android:text="x1" />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

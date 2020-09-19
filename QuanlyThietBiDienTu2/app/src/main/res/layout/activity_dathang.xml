@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="GUI.DathangActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:scrollbars="vertical"
+        >
+
+
+        <LinearLayout
+            android:background="@drawable/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Địa Chỉ  Nhận Hàng"
+                android:textSize="18sp"
+                >
+            </TextView>
+            <LinearLayout
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                    android:text="Mai Thành Nhân"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    >
+                </TextView>
+                <TextView
+                    android:layout_marginLeft="6dp"
+                    android:text="0938942207"
+                    android:textSize="17sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+            </LinearLayout>
+            <TextView
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:text="106 Nguyễn Quý Anh Quận Tân Phú Phường Tân Sơn Nhì,Tp Hồ Chí Minh"
+                >
+
+            </TextView>
+
+        </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/Recdathang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+
+        >
+
+    </android.support.v7.widget.RecyclerView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:background="@drawable/line"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đơn vị vận chuyển(Nhấn để chọn)"
+            android:textSize="10sp"
+            android:textColor="#009688"
+            >
+        </TextView>
+        <TextView
+            android:layout_marginTop="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vận Chuyển  Nhanh"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            >
+        </TextView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giao Hàng Nhanh"
+                android:textSize="15sp"
+                android:textStyle="bold">
+                
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="16.474 đ >"
+                android:textStyle="bold"
+                >
+            </TextView>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:textSize="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nhận hàng vào"
+                />
+            <TextView
+                android:textSize="10sp"
+                android:layout_marginLeft="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4-TH08-5-TH08"
+                />
+        </LinearLayout>
+
+        
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/line"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tin Nhắn:"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Lưu ý cho người bán"
+            >
+        </EditText>
+
+    </LinearLayout>
+
+        <RelativeLayout
+            android:padding="9dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tổng Tiền(1 sản phẩm)"
+                android:textSize="17sp"
+                >
+            </TextView>
+            <TextView
+                android:id="@+id/txtTongtiensp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FF5722"
+                android:textSize="17sp"
+                android:text="516.474 đ"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+
+    <RelativeLayout
+    android:layout_marginTop="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:background="@drawable/line"
+        android:padding="8dp"
+    >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shop Voucher"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chon hoặc nhập mã >"
+            android:layout_alignParentRight="true"
+            />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:padding="9dp"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phương thức  Thanh toán"
+                >
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                    android:text="Thanh toán khi nhân hàng>"
+                android:layout_alignParentRight="true"
+
+                />
+
+        </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/line"
+                android:padding="9dp"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tổng Tiền hàng"
+                        >
+
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="500.000 đ"
+                        android:textColor="#10100F"
+                        android:layout_alignParentRight="true"
+                        >
+
+                    </TextView>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tổng Tiền phí vận chuyển"
+                        >
+
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="16.474 đ"
+                        android:textColor="#10100F"
+                        android:layout_alignParentRight="true"
+                        >
+
+                    </TextView>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tổng Tiền Thanh Toán"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        >
+
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtTongTienDonHang"
+                        android:text="516.478 đ"
+                        android:textColor="#10100F"
+                        android:layout_alignParentRight="true"
+                        >
+                    </TextView>
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                    <Button
+                        android:id="@+id/btndathang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Đặt Hàng"
+                        android:textColor="#ffff"
+
+                        android:layout_alignParentRight="true"
+                        android:background="#FF5722"
+                        >
+
+                    </Button>
+                    <TextView
+                        android:id="@+id/tong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tổng Thanh toán"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/btndathang"
+                        />
+                    <TextView
+                        android:id="@+id/txtTongTienThanhToandat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="516.474 đ"
+                        android:textColor="#FF5722"
+                        android:layout_below="@+id/tong"
+                        android:layout_marginRight="7dp"
+                        android:layout_toLeftOf="@+id/btndathang"
+                        />
+            </RelativeLayout>
+    </LinearLayout>
+
+
+</ScrollView>

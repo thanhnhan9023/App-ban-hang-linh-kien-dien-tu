@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group >
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_my_rewards"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Infomation Khach Hang" />
+        <item
+            android:id="@+id/nav_my_cart"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="My Cart" />
+        <item
+            android:id="@+id/nav_My_Acoount"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="My Account" />
+        <item
+            android:id="@+id/nav_donhang"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Đơn Hàng" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Log out" />
+    </group>
+</menu>
